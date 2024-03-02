@@ -93,7 +93,7 @@ test('you can mock things with jest.mock', () => {
     {in: true, ...defaultProps},
     context,
   )
-  fireEvent.click(getByText(/toggle/i))
+  fireEvent.click(getByText(Toggle))
   expect(CSSTransition).toHaveBeenCalledWith(
     {in: false, ...defaultProps},
     expect.any(Object),
